@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mjeYlQ9dR8OVS+V9vbpqjpe+mIEPLD39tEkbEZnEQvg=",
+  "Source": "Ticket-Reservation-System-Server",
+  "BasePath": "_content/Ticket-Reservation-System-Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
