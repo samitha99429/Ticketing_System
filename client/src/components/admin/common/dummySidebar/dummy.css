@@ -1,0 +1,116 @@
+/* Sidebar.css */
+.sidebar {
+    position: fixed;
+    top: 10px;
+    margin-top: 105px;
+    left: 10px;
+    background: conic-gradient(
+        from 45deg at 50% 50%,
+        #333333 0%,
+        #666666 25%,
+        #999999 50%,
+        #666666 75%,
+        #333333 100%
+      );
+      
+      
+    width: 220px;
+    height: calc(100% - 80px);
+    border-bottom-left-radius: 20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-icon {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-icon i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 1px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.sidebar ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(from 208.67deg at 9.44% -12.5%, #3EFFC4 0deg, #C1FFEC 123.75deg, #2B4B43 234.38deg, #3EFFC4 360deg);
+    display: none;
+}
+
+.sidebar ul li a span.icon {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.sidebar ul li a span.title {
+    display: inline-block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #1a8cff; /* Dark blue background on hover/active */
+  color: #ffffff; /* White text color on hover/active */
+  font-weight: bold; /* Bold font weight on hover/active */
+}
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before {
+    display: block;
+}
+
+.wrapper.collapse .sidebar {
+    width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a {
+    text-align: center;
+}
+
+.wrapper.collapse .sidebar ul li a span.icon {
+    margin: 0;
+}
+
+.wrapper.collapse .sidebar ul li a span.title {
+    display: none;
+}
+
+ul {
+    padding-left: 0;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background: linear-gradient(to right, #61dafb, #0d898d); /* Gradient colors: blue to dark blue */
+  color: #000000; /* Text color */
+  font-weight: bold;
+}
+
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before {
+    display: block;
+}
